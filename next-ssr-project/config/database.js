@@ -9,6 +9,7 @@ const connectDB = async () => {
     return;
   }
   try {
+    // eslint-disable-next-line no-undef
     await mongoose.connect(process.env.MONGODB_URI);
     connected = true;
     console.log("MongoDB connected");
